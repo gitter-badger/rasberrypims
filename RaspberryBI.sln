@@ -1,0 +1,189 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TollAggregatorService", "TollAggregatorService", "{88855D2B-449F-4075-81D6-063B59C37119}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TollAppService", "TollAppService", "{407A6F30-D0CD-4583-A57F-137D593ABF5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RTAService", "RTAService", "{FDD47FE1-7C18-4237-ABBC-C4A72CCE83B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CitizenDataService", "CitizenDataService", "{53DA32EA-0E90-4180-B5F6-EB6C1E9FD6C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TollTaskProcessor", "TollTaskProcessor", "{AF9CD54E-A462-459E-A4D9-D472481C7597}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TollDashboard", "TollDashboard", "{25707278-18D8-474F-9A7B-1856C379FA14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.CitizenDataService", "RasperryPI.CitizenDataService\RasperryPI.CitizenDataService.csproj", "{5C6D9E55-6EEE-4F53-B611-0B240FA0B036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.CitizenDataService.Tests", "RasperryPI.CitizenDataService.Tests\RasperryPI.CitizenDataService.Tests.csproj", "{A38ACEB3-D89B-4695-8825-CD48C375F519}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{BA78E05A-3D7D-40DB-90DE-4FF70B538356}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{C94DF4F2-E9E7-42F1-B8BA-5A19109AD946}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\RasperryPICitizenDataService-WAWS-dev.json = PublishScripts\Configurations\RasperryPICitizenDataService-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.RTAService", "RasperryPI.RTAService\RasperryPI.RTAService.csproj", "{B3D5AED6-DD26-4C52-AE55-848E2CB1E3AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.RTAService.Tests", "RasperryPI.RTAService.Tests\RasperryPI.RTAService.Tests.csproj", "{ABBBD2E4-BE6F-4461-BC51-6C58CD2E9324}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{26273EC7-D827-4BF8-903A-428966D2589E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{834AD8AA-EDA3-4793-B326-65412A4C4B95}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\RasperryPIRTAService-WAWS-dev.json = PublishScripts\Configurations\RasperryPIRTAService-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.TollAggregatorService", "RasperryPI.TollAggregatorService\RasperryPI.TollAggregatorService.csproj", "{AEC0EBFB-4002-4ABD-84E4-60DE452F3509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.TollAggregatorService.Tests", "RasperryPI.TollAggregatorService.Tests\RasperryPI.TollAggregatorService.Tests.csproj", "{BB6DF167-A40A-4726-AE88-46DBA51C9FA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{80DE7D1C-E270-4BF6-8738-6D6B3853E60E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{D83C0D82-0947-4A17-B863-2D51B43E6F46}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\RasperryPITollAggregatorService-WAWS-dev.json = PublishScripts\Configurations\RasperryPITollAggregatorService-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.TollAppService", "RasperryPI.TollAppService\RasperryPI.TollAppService.csproj", "{8CC3DDF1-E848-470E-B9C5-001A8050FE07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.TollAppService.Tests", "RasperryPI.TollAppService.Tests\RasperryPI.TollAppService.Tests.csproj", "{2C8ADC4F-F3FB-4521-823A-F3CBA2BA67F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{9B73CCD3-9722-4B10-BEF4-037DE892BB1C}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{F05375C7-45D7-436E-B93B-6E28A6E93BB6}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\RasperryPITollAppService-WAWS-dev.json = PublishScripts\Configurations\RasperryPITollAppService-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.TollDashboard", "RasperryPI.TollDashboard\RasperryPI.TollDashboard.csproj", "{6EBD12EF-6A16-4EF8-8E7F-C0AA671376FF}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "RasperryPI.TollTaskProcessor", "RasperryPI.TollTaskProcessor\RasperryPI.TollTaskProcessor.ccproj", "{96EFA238-F45F-4EE5-A9C2-2A22382DEC2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TollTaskProcessor", "TollTaskProcessor\TollTaskProcessor.csproj", "{0F73C3F8-26E5-44DF-8FB5-F47C47EE67EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{B1916893-D774-4BB2-A4DC-9C08D3071D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.Framework", "RasperryPI.Framework\RasperryPI.Framework.csproj", "{2C5CC44D-7093-4550-AAF0-B5BA252F3829}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryPI.Framework.Tests", "RasperryPI.Framework.Tests\RasperryPI.Framework.Tests.csproj", "{41A7028A-DEE1-4F86-9EC1-ED8DB770CB42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryBI.CitizenDataService.Data", "RasperryBI.CitizenDataService.Data\RasperryBI.CitizenDataService.Data.csproj", "{F4A6EC28-27F2-4BD1-AB3B-5302325710E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasperryBI.CitizenDataService.Entities", "RasperryBI.CitizenDataService.Entities\RasperryBI.CitizenDataService.Entities.csproj", "{717D3029-C2DE-4BC7-A541-65609D4071A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C6D9E55-6EEE-4F53-B611-0B240FA0B036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C6D9E55-6EEE-4F53-B611-0B240FA0B036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C6D9E55-6EEE-4F53-B611-0B240FA0B036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C6D9E55-6EEE-4F53-B611-0B240FA0B036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A38ACEB3-D89B-4695-8825-CD48C375F519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38ACEB3-D89B-4695-8825-CD48C375F519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38ACEB3-D89B-4695-8825-CD48C375F519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38ACEB3-D89B-4695-8825-CD48C375F519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D5AED6-DD26-4C52-AE55-848E2CB1E3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D5AED6-DD26-4C52-AE55-848E2CB1E3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D5AED6-DD26-4C52-AE55-848E2CB1E3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D5AED6-DD26-4C52-AE55-848E2CB1E3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABBBD2E4-BE6F-4461-BC51-6C58CD2E9324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABBBD2E4-BE6F-4461-BC51-6C58CD2E9324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABBBD2E4-BE6F-4461-BC51-6C58CD2E9324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABBBD2E4-BE6F-4461-BC51-6C58CD2E9324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEC0EBFB-4002-4ABD-84E4-60DE452F3509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC0EBFB-4002-4ABD-84E4-60DE452F3509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC0EBFB-4002-4ABD-84E4-60DE452F3509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC0EBFB-4002-4ABD-84E4-60DE452F3509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB6DF167-A40A-4726-AE88-46DBA51C9FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6DF167-A40A-4726-AE88-46DBA51C9FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB6DF167-A40A-4726-AE88-46DBA51C9FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6DF167-A40A-4726-AE88-46DBA51C9FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC3DDF1-E848-470E-B9C5-001A8050FE07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC3DDF1-E848-470E-B9C5-001A8050FE07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC3DDF1-E848-470E-B9C5-001A8050FE07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC3DDF1-E848-470E-B9C5-001A8050FE07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C8ADC4F-F3FB-4521-823A-F3CBA2BA67F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8ADC4F-F3FB-4521-823A-F3CBA2BA67F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8ADC4F-F3FB-4521-823A-F3CBA2BA67F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8ADC4F-F3FB-4521-823A-F3CBA2BA67F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBD12EF-6A16-4EF8-8E7F-C0AA671376FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBD12EF-6A16-4EF8-8E7F-C0AA671376FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBD12EF-6A16-4EF8-8E7F-C0AA671376FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBD12EF-6A16-4EF8-8E7F-C0AA671376FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96EFA238-F45F-4EE5-A9C2-2A22382DEC2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96EFA238-F45F-4EE5-A9C2-2A22382DEC2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96EFA238-F45F-4EE5-A9C2-2A22382DEC2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96EFA238-F45F-4EE5-A9C2-2A22382DEC2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F73C3F8-26E5-44DF-8FB5-F47C47EE67EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F73C3F8-26E5-44DF-8FB5-F47C47EE67EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F73C3F8-26E5-44DF-8FB5-F47C47EE67EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F73C3F8-26E5-44DF-8FB5-F47C47EE67EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C5CC44D-7093-4550-AAF0-B5BA252F3829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C5CC44D-7093-4550-AAF0-B5BA252F3829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C5CC44D-7093-4550-AAF0-B5BA252F3829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C5CC44D-7093-4550-AAF0-B5BA252F3829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41A7028A-DEE1-4F86-9EC1-ED8DB770CB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41A7028A-DEE1-4F86-9EC1-ED8DB770CB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41A7028A-DEE1-4F86-9EC1-ED8DB770CB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41A7028A-DEE1-4F86-9EC1-ED8DB770CB42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A6EC28-27F2-4BD1-AB3B-5302325710E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A6EC28-27F2-4BD1-AB3B-5302325710E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A6EC28-27F2-4BD1-AB3B-5302325710E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A6EC28-27F2-4BD1-AB3B-5302325710E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717D3029-C2DE-4BC7-A541-65609D4071A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717D3029-C2DE-4BC7-A541-65609D4071A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717D3029-C2DE-4BC7-A541-65609D4071A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717D3029-C2DE-4BC7-A541-65609D4071A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C6D9E55-6EEE-4F53-B611-0B240FA0B036} = {53DA32EA-0E90-4180-B5F6-EB6C1E9FD6C9}
+		{A38ACEB3-D89B-4695-8825-CD48C375F519} = {53DA32EA-0E90-4180-B5F6-EB6C1E9FD6C9}
+		{BA78E05A-3D7D-40DB-90DE-4FF70B538356} = {53DA32EA-0E90-4180-B5F6-EB6C1E9FD6C9}
+		{C94DF4F2-E9E7-42F1-B8BA-5A19109AD946} = {BA78E05A-3D7D-40DB-90DE-4FF70B538356}
+		{B3D5AED6-DD26-4C52-AE55-848E2CB1E3AF} = {FDD47FE1-7C18-4237-ABBC-C4A72CCE83B2}
+		{ABBBD2E4-BE6F-4461-BC51-6C58CD2E9324} = {FDD47FE1-7C18-4237-ABBC-C4A72CCE83B2}
+		{26273EC7-D827-4BF8-903A-428966D2589E} = {FDD47FE1-7C18-4237-ABBC-C4A72CCE83B2}
+		{834AD8AA-EDA3-4793-B326-65412A4C4B95} = {26273EC7-D827-4BF8-903A-428966D2589E}
+		{AEC0EBFB-4002-4ABD-84E4-60DE452F3509} = {88855D2B-449F-4075-81D6-063B59C37119}
+		{BB6DF167-A40A-4726-AE88-46DBA51C9FA6} = {88855D2B-449F-4075-81D6-063B59C37119}
+		{80DE7D1C-E270-4BF6-8738-6D6B3853E60E} = {88855D2B-449F-4075-81D6-063B59C37119}
+		{D83C0D82-0947-4A17-B863-2D51B43E6F46} = {80DE7D1C-E270-4BF6-8738-6D6B3853E60E}
+		{8CC3DDF1-E848-470E-B9C5-001A8050FE07} = {407A6F30-D0CD-4583-A57F-137D593ABF5F}
+		{2C8ADC4F-F3FB-4521-823A-F3CBA2BA67F2} = {407A6F30-D0CD-4583-A57F-137D593ABF5F}
+		{9B73CCD3-9722-4B10-BEF4-037DE892BB1C} = {407A6F30-D0CD-4583-A57F-137D593ABF5F}
+		{F05375C7-45D7-436E-B93B-6E28A6E93BB6} = {9B73CCD3-9722-4B10-BEF4-037DE892BB1C}
+		{6EBD12EF-6A16-4EF8-8E7F-C0AA671376FF} = {25707278-18D8-474F-9A7B-1856C379FA14}
+		{96EFA238-F45F-4EE5-A9C2-2A22382DEC2F} = {AF9CD54E-A462-459E-A4D9-D472481C7597}
+		{0F73C3F8-26E5-44DF-8FB5-F47C47EE67EF} = {AF9CD54E-A462-459E-A4D9-D472481C7597}
+		{2C5CC44D-7093-4550-AAF0-B5BA252F3829} = {B1916893-D774-4BB2-A4DC-9C08D3071D40}
+		{41A7028A-DEE1-4F86-9EC1-ED8DB770CB42} = {B1916893-D774-4BB2-A4DC-9C08D3071D40}
+		{F4A6EC28-27F2-4BD1-AB3B-5302325710E0} = {53DA32EA-0E90-4180-B5F6-EB6C1E9FD6C9}
+		{717D3029-C2DE-4BC7-A541-65609D4071A9} = {53DA32EA-0E90-4180-B5F6-EB6C1E9FD6C9}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="RasperryPI.TollTaskProcessor" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="TollTaskProcessor">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="tolladmin" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEDUKLDDH9T6jSNFb+kBHSLMwDQYJKoZIhvcNAQEBBQAEggEAA+jQHsPhJfu3npA5CRJUNw4L6WjF2khpWMylcAPIrkqVhWgTZmq+Hnjn9pG77DRgNPhbIF1DpKs2Jbuie27SiCtmcmWCKcBM+67GBDoTx/OVtFjUfYRLVG0dbqY82DsWDK9mB0DxXG3fhYUiIfu3SYQ474+3EaDzjgoqPSw38qvtIobRZFaLkCn0bVrWOwwOUokaC3BEr1+Lz8zlAiSotBOW9rp4ZCWL+EVA7/fj9jTJmZGoR9H+14z7JhOGzcCBDbyDKfEraxfe0p5fNLvYpJIv55zkSGqYw7V9Zu1tlwU1mT4DpMb1nrs6J/NcIVuSHV5v+H5BZs/KEKUhMmJsOzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECG6N4Sp5IRVSgBBoI7RuP6exFYiJbQq7Mbpi" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2016-04-07T23:59:59.0000000+05:30" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="storageconnectionstring" value="DefaultEndpointsProtocol=https;AccountName=tapstoll;AccountKey=KAMcBAueOCX35w7awpsiQknrivpExqx79Rx1Da+2ulqcSMFkggj0cccU0A54VzdyEySgP7S2D7ejk6BXGc14Fg==" />
+      <Setting name="RTAServiceEndpoint" value="" />
+      <Setting name="CitizenDataServiceEndpoint" value="" />
+      <Setting name="TollAggregatorServiceEndpoint" value="" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="03AD0CB2B12C00140BCA6F3EE1D66546E743543A" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
