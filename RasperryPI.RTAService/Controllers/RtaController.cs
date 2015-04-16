@@ -10,7 +10,7 @@ namespace RasperryPI.RTAService.Controllers
     public class RtaController : ApiController
     {
         [Route("rta/{vehicleno}")]
-        public IHttpActionResult GetVehicleNo(string vehicleno)
+        public IHttpActionResult GetVehicle(string vehicleno)
         {
           throw new NotImplementedException();
         }
