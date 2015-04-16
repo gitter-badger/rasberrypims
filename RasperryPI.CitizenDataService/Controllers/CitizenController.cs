@@ -18,7 +18,7 @@ namespace RasperryPI.CitizenDataService.Controllers
         {
             _citizenRepository = new CitizenRepository(new CitizenContext());
         }
-
+        
         public CitizenController(CitizenRepository citizenRepository)
         {
             _citizenRepository = citizenRepository;

@@ -67,6 +67,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AzureQueue.cs" />
+    <Compile Include="AzureQueueFactory.cs" />
+    <Compile Include="AzureQueueRepository.cs" />
+    <Compile Include="AzureQueueService.cs" />
+    <Compile Include="BlobFileManager.cs" />
+    <Compile Include="IFileManager.cs" />
+    <Compile Include="PhoenixAzureStorageHelper.cs" />
+    <Compile Include="TollMessage.cs" />
+    <Compile Include="IAzureQueueFactory.cs" />
+    <Compile Include="IAzureQueueService.cs" />
+    <Compile Include="IQueueMessage.cs" />
+    <Compile Include="IQueueRepository.cs" />
+    <Compile Include="IQueueService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TollConfiguration.cs" />
   </ItemGroup>

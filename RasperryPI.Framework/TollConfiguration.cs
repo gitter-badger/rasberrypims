@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Configuration;
 using Microsoft.WindowsAzure.ServiceRuntime;
 
 namespace RasperryPI.Framework
@@ -11,20 +6,20 @@ namespace RasperryPI.Framework
     public static class TollConfiguration
     {
         /// <summary>
-        /// Gets the configuration item.
+        ///     Gets the configuration item.
         /// </summary>
         /// <param name="key">
-        /// The key.
+        ///     The key.
         /// </param>
         /// <returns>
-        /// Details of configuration item
+        ///     Details of configuration item
         /// </returns>
         public static string GetConfigurationItem(string key)
         {
-            if (RoleEnvironment.IsAvailable)
-            {
-                return RoleEnvironment.GetConfigurationSettingValue(key);
-            }
+            //if (RoleEnvironment.IsAvailable)
+            //{
+            //    return RoleEnvironment.GetConfigurationSettingValue(key);
+            //}
 
             return ConfigurationManager.AppSettings[key];
         }
