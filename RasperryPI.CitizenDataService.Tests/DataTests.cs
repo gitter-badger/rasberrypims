@@ -12,6 +12,7 @@ namespace RasperryPI.CitizenDataService.Tests
         {
             var repo = new CitizenRepository(new CitizenContext());
             Assert.IsNotNull(repo.GetCitizen("Srini"));
+            
         }
     }
 }

@@ -11,6 +11,8 @@ namespace RasperryPI.TollAggregatorService
     {
         protected void Application_Start()
         {
+            // New code
+            
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }

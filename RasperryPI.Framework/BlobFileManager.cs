@@ -14,7 +14,7 @@ namespace RasperryPI.Framework
             _connString = connectionString;
         }
 
-        public string PersisteFile(Stream stream, string userId)
+        public string PersisteFile(Stream stream, string userId, string fileType)
         {
             try
             {
@@ -23,7 +23,7 @@ namespace RasperryPI.Framework
                 var dictionary = new Dictionary<string, string>();
                 dictionary.Add("UserId", userId);
                 dictionary.Add("ReferenceId", uid.ToString());
-                manager.UploadFile(stream, _container, uid.ToString() + ".xlsx", _connString, dictionary);
+                manager.UploadFile(stream, _container, uid.ToString() + fileType, _connString, dictionary);
                 return uid.ToString();
             }
             catch (Exception ex)
@@ -44,11 +44,30 @@ namespace RasperryPI.Framework
             }
             catch (Exception ex)
             {
-               // throw new PhoenixException(Layer.Business, "", "", ex);
+                // throw new PhoenixException(Layer.Business, "", "", ex);
             }
             return false;
         }
 
+        public Stream ReadStreamImage(string url)
+        {
+            try
+            {
+                var manager = new PhoenixAzureStorageHelper();
+                var dictionary = new Dictionary<string, string>();
+
+                var files = url.Split("/".ToCharArray());
+                var file = files[files.Length - 1];
+                file = file.Replace(".png", ".jpg");
+                //return null;
+                return manager.DownloadFile(_container, file, _connString, dictionary);
+            }
+            catch (Exception ex)
+            {
+                // throw new PhoenixException(Layer.Business, "", "", ex);
+            }
+            return null;
+        }
         public Stream ReadFile(string referenceId, string userId)
         {
             try
@@ -62,10 +81,12 @@ namespace RasperryPI.Framework
             }
             catch (Exception ex)
             {
-               // throw new PhoenixException(Layer.Business, "", "", ex);
+                // throw new PhoenixException(Layer.Business, "", "", ex);
             }
             return null;
         }
+
+
 
         public Stream ReadErrorFile(string referenceId, string userId)
         {
@@ -88,7 +109,7 @@ namespace RasperryPI.Framework
         public void DeleteFile(string fileName)
         {
             var manager = new PhoenixAzureStorageHelper();
-            manager.DeleteFile(_container, fileName,_connString);
+            manager.DeleteFile(_container, fileName, _connString);
         }
 
     }

@@ -1,0 +1,60 @@
+﻿<!-- index.html -->
+<!DOCTYPE html>
+<html ng-app="scotchApp">
+<head>
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />-->
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <link href="Scripts/font-awesome.css" rel="stylesheet" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <link href="Scripts/ng-grid.css" rel="stylesheet" />
+    <script src="Scripts/ng-grid.debug.js"></script>
+    <script src="script.js"></script>
+    <style>
+       /*style.css*/
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width:1000px; 
+    height: 300px
+}
+.container {
+    height: 100%;
+}
+.container {
+    display: table;
+    vertical-align: middle;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+    </style>
+</head>
+<body>
+
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Toll Dashboard</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#toll"><i class="fa fa-shield"></i> Toll</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main">
+
+        <div ng-view>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -36,5 +36,12 @@ namespace RasperryPI.Framework
             purchaseAzureQueue.EnsureExist();
             purchaseAzureQueue.DeleteMessage(queueMessage);
         }
+
+        public TollMessage ReadTollMessage()
+        {
+            var purchaseAzureQueue = this._queueFactory.GetQueue<TollMessage>();
+            purchaseAzureQueue.EnsureExist();
+            return purchaseAzureQueue.GetMessage();
+        }
     }
 }

@@ -23,6 +23,11 @@ namespace RasperryPI.Framework
             return _queueRepository.AddTollMessage(tollMessage);
         }
 
+        public TollMessage ReadTollMessage()
+        {
+            return _queueRepository.ReadTollMessage();
+        }
+
         /// <summary>
         ///     Remove PurchaseReceipt Message
         /// </summary>

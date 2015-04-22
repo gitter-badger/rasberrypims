@@ -21,4 +21,16 @@ namespace RasperryPI.Framework
 
         public string MessageId { get; set; }
     }
+
+    [Serializable]
+    public class TollImageMessage : IQueueMessage
+    {
+        public string FileName { get; set; }
+
+        public string PopReceipt { get; set; }
+
+        public int DequeueCount { get; set; }
+
+        public string MessageId { get; set; }
+    }
 }

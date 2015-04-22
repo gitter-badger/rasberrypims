@@ -5,5 +5,6 @@
         bool AddTollMessage(TollMessage tollMessage);
 
         void RemoveTollMessage(TollMessage tollMessage);
+
     }
 }

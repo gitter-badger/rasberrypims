@@ -15,8 +15,8 @@
     <AzureEnableProfiling>False</AzureEnableProfiling>
     <AzureServiceConfiguration>Cloud</AzureServiceConfiguration>
     <AzureSolutionConfiguration>Release</AzureSolutionConfiguration>
-    <AzureStorageAccountLabel>portalvhds82ltfmp932cd8</AzureStorageAccountLabel>
-    <AzureStorageAccountName>portalvhds82ltfmp932cd8</AzureStorageAccountName>
+    <AzureStorageAccountLabel>rtatoll</AzureStorageAccountLabel>
+    <AzureStorageAccountName>rtatoll</AzureStorageAccountName>
     <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
   </PropertyGroup>
 </Project>
